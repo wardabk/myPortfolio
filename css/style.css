@@ -139,7 +139,12 @@ nav .container .logo-name {
       overflow: hidden;
       border-radius: 10px;
       cursor: pointer;
+      width:8rem;
+      height:30rem;
+     
+     
   }
+  
 
   .introduction:hover .img-perso {
     transform: scale(0.9);
@@ -361,20 +366,15 @@ footer .icons-footer a:hover{
    
 /*********responsive*************/
 
-@media screen and(min-width:300px) and (max-width:1024px;){
+@media screen and(min-width:300px) and (max-width:1024px){
   html body{
   width:100%;
   display:block;
   justify-content:center;
   align-items:center;
   padding:10px;
-  margin:10px;
+  margin: 0 10px;
   text-align: center;
   }
-  .btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-  }
+  
 }
