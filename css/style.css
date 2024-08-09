@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+  
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    
+    --primary-color:#bf49c8;
+    --secondary-color:#e19dde;
+   --dark-color:#373737;
+   --yellow-color:#DCCD2E;
+   --yellow-dark-color:#beaf0b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;    
+} 
+
+ html body{
+ font-family: "Jost", sans-serif;
+ font-weight:400;
+ color:#555;
+ background-color:whitesmoke;
+
+}
+
+/************style la barre de navigation***********/
+
+.container-header .nav-link {
+    color:var(--dark-color);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.container-header .nav-link:hover{
+
+    color:var(--primary-color);
+}
+
+/*************style logo name********************/
+nav .container .logo-name {
+    font-size: 1.25rem;
+    font-weight:800;
+    color:var(--dark-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/************style section main/accueil**********/
+
+ .home-img img{
+   max-width:100%;
+ 
+  
+  }
+ 
+  .main h2 {
+    
+    font-size: 3rem;
+    font-weight:700;
+  }
+  .main .container .myName {
+    color:var(--secondary-color);
+  }
+
+
+  /********texte typed*********/
+  .typed-cursor {
+    background: var(--primary-color);
+    vertical-align: text-bottom;
+  }
+  
+  .typed-cursor--blink {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .typedText{
+    color:var(--primary-color);
+    }
+
+
+    /******button 1*******/
+    .main .btn1{
+        height: 3rem;
+        width:8.75rem;
+        margin: 0 10px;
+        background-color:var(--yellow-color);
+        color:white;
+        outline:none;
+        border:none;
+        font-weight: bold;
+        border-radius: 5px;
+       
+    }
+    .main .btn1:hover{
+        background-color:var(--yellow-dark-color);
+        transition:0.5s;
+    }
+    /******button 2*******/
+    .main .btn2{
+        height:3rem;
+        width: 8.75rem;
+        margin: 0 10px;
+        background-color:transparent;
+        color:var(--yellow-color);
+        outline:none;
+        border:1px solid var(--yellow-color);
+        font-weight:700;
+        border-radius: 5px;
+      
+    }
+    .main .btn2:hover{
+        background-color:var(--yellow-dark-color);
+        transition: 0.5s;
+        color:white;
+        border:none;
+    }
+
+     .nomGras{
+        font-weight: bold;
+    }
+     
+
+            
+     /********section about *******/   
+     #about{
+      background-color:rgb(249, 239, 239);
+     }
+
+  .introduction .img-perso {
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+
+  .introduction:hover .img-perso {
+    transform: scale(0.9);
+  }
+  
+
+  
+   .introduction .cursus {
+    padding-left: 6rem;
+   }
+
+
+   html body h1 {
+    font-style:3rem;
+    font-weight:900;
+   }
+
+   .introduction .btn11 {
+    height:3rem;
+    width:8.75rem;
+    margin: 0 10px;
+    outline:none;
+    border:none;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    
+   }
+   .introduction .btn11:hover {
+    background-color:transparent;
+    color:black;
+    border: 1px solid black;
+    transition: 0.5s;
+   } 
+
+   .introduction .btn22 {
+    height:3rem;
+    width:8.75rem;
+    outline:none;
+    border:none;
+    color:black;
+    border: 1px solid black;
+    background-color:transparent;
+    border-radius: 5px;
+  
+   }
+   .introduction .btn22:hover {
+    background-color:black;
+    color:white;
+    border:none;
+    transition: 0.5s;
+   } 
+
+   /***************skills*****************/
+   
+   .skills{
+    font-style:3rem;
+    font-weight:900; 
+   }
+   
+   .skill-logo {
+    width: 100px;
+    height: auto;
+    margin: 0 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+   }
+
+  .skill-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+  /***********services**************/
+
+ .services .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    overflow: hidden;
+    color:grey;
+  }
+
+  .services  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .services .circle{
+    height:4.4rem ;
+    width:4.4rem;
+    background-color: rgb(227, 187, 187);
+    color:black;
+    font-size: 1.8rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1.25rem;
+  } 
+  .services .card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+  }
+
+
+/*********portfolio*************/
+#portfolio{
+    background-color:rgb(249, 239, 239);
+   }
+ 
+.portfolio .item:before{
+ 
+  height: 100%;
+  max-width: 100%;
+  background-color: rbga(238,235,230,0.644);
+  opacity:0;
+  position:absolute;
+
+  
+}
+
+ .portfolio img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+
+ /****** button see more  *******/
+ .portfolio .btn-pro {
+  background-color:var(--primary-color);
+  color: white;
+  outline: none;
+  border:none;
+  height:3rem;
+  width:8.75rem;
+  border-radius: 5px;
+}
+.portfolio .btn-pro:hover{
+  background: white;
+  color:var(--primary-color);
+   border:1px solid #d44bb4;
+   font-weight: 500;
+   transition:0.4s;
+
+     }
+
+
+
+
+ /****** button 3 *******/
+ .contact .btn3{
+  background-color:var(--yellow-dark-color);
+  color: white;
+  outline: none;
+  border:none;
+  height:3rem;
+  width:8.75rem;
+  border-radius: 5px;
+}
+.btn3:hover{
+  background: white;
+  color:var(--primary-color);
+   border:1px solid #d44bb4;
+   font-weight: 500;
+   transition:0.4s;
+
+     }
+
+
+/*********contact**************/
+.contact .circle{
+  height:4.4rem ;
+  width:4.4rem;
+  background-color: rgb(227, 187, 187);
+  color:black;
+  font-size: 1.8rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+} 
+.contact .circle:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+
+     /******* Le footer *******/
+
+ footer {
+    background-color:rgb(227, 187, 187);
+    color:var(--dark-color);
+    font-weight: bold;
+}
+footer .pied-name {
+  font-weight: 900;
+  color:darkmagenta;
+}
+
+footer .icons-footer a {
+padding: 0 1rem;
+background-color: rgb(227, 187, 187);
+color:black;
+font-size: 1.8rem;
+border-radius: 50%;
+display: inline-block;
+margin-bottom: 1rem;
+}
+footer .icons-footer a:hover{
+  background-color:transparent;
+  color:darkmagenta;
+  transition: 0.4s;
+  
+}
+   
+/*********responsive*************/
+
+@media screen and(min-width:300px) and (max-width:1024px;){
+  html body{
+  width:100%;
+  display:block;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+  margin:10px;
+  text-align: center;
+  }
+  .btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+}
