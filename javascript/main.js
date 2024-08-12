@@ -32,16 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // button11
-document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementById("myButton11");
-  button.addEventListener("click", function () {
-    var link = document.createElement("a");
-    link.href = "D:Warda BOUBAKER.pdf";
-    link.download = "cv_Warda.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  });
+document.getElementById('myButton11').addEventListener('click', function() {
+ 
+  const link = document.createElement('a');
+  link.href = 'file:///D:/wardaCV.pdf';
+  link.download ='wardabk_CV';
+  link.click();
+  
 });
 
 //button22
@@ -80,4 +77,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
- 
+ //portfolio see more
+
+ //see more1
+ document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.click-one');
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          const url = 'https://wardabk.github.io/TravauxPratiques-10kc/';
+          window.open(url, '_blank');
+      });
+  });
+});
+
+//see more2
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.click-two');
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          const url = 'https://wardabk.github.io/projet-10kc-Bootstrap/';
+          window.open(url, '_blank');
+      });
+  });
+});
+
+//see more3
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.click-three');
+  buttons.forEach(button => {
+      button.addEventListener('click', function() {
+          const url = 'https://wardabk.github.io/myPortfolio/';
+          window.open(url, '_blank');
+      });
+  });
+});

@@ -53,6 +53,7 @@ nav .container .logo-name {
 
  .home-img img{
    max-width:100%;
+   border-radius: 50%;
  
   
   }
@@ -142,20 +143,12 @@ nav .container .logo-name {
       width:8rem;
       height:30rem;
      
-     
   }
   
 
   .introduction:hover .img-perso {
     transform: scale(0.9);
   }
-  
-
-  
-   .introduction .cursus {
-    padding-left: 6rem;
-   }
-
 
    html body h1 {
     font-style:3rem;
