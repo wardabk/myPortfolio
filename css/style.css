@@ -6,9 +6,16 @@
     
     --primary-color:#bf49c8;
     --secondary-color:#e19dde;
-   --dark-color:#373737;
+   --dark-color:#2d2d2d;
    --yellow-color:#DCCD2E;
    --yellow-dark-color:#beaf0b;
+   --bg-color:whitesmoke;
+   --white-color:white;
+   --darkmagenta-color:darkmagenta;
+   --pink-light-color:rgb(227, 187, 187);
+   --pink-dark-color:#d44bb4;
+   --black-color:black;
+   --beige-color:rgb(249, 239, 239);
 }
 
 *{
@@ -20,8 +27,8 @@
  html body{
  font-family: "Jost", sans-serif;
  font-weight:400;
- color:#555;
- background-color:whitesmoke;
+ color:var(--dark-color);
+ background-color:var(--bg-color);
 
 }
 
@@ -47,8 +54,8 @@ nav .container .logo-name {
     color:var(--dark-color);
     cursor: pointer;
     text-decoration: none;
-}
-
+} 
+ 
 /************style section main/accueil**********/
 
  .home-img img{
@@ -93,7 +100,7 @@ nav .container .logo-name {
         width:8.75rem;
         margin: 0 10px;
         background-color:var(--yellow-color);
-        color:white;
+        color:var(--white-color);
         outline:none;
         border:none;
         font-weight: bold;
@@ -120,7 +127,7 @@ nav .container .logo-name {
     .main .btn2:hover{
         background-color:var(--yellow-dark-color);
         transition: 0.5s;
-        color:white;
+        color:var(--white-color);
         border:none;
     }
 
@@ -132,7 +139,7 @@ nav .container .logo-name {
             
      /********section about *******/   
      #about{
-      background-color:rgb(249, 239, 239);
+      background-color:var(--beige-color);
      }
 
   .introduction .img-perso {
@@ -153,6 +160,7 @@ nav .container .logo-name {
    html body h1 {
     font-style:3rem;
     font-weight:900;
+    color:var(--primary-color)
    }
 
    .introduction .btn11 {
@@ -161,15 +169,15 @@ nav .container .logo-name {
     margin: 0 10px;
     outline:none;
     border:none;
-    color:white;
-    background-color: black;
+    color:var(--white-color);
+    background-color:var(--black-color);
     border-radius: 5px;
     
    }
    .introduction .btn11:hover {
     background-color:transparent;
-    color:black;
-    border: 1px solid black;
+    color:var(--black-color);
+    border: 1px solid var(--black-color);
     transition: 0.5s;
    } 
 
@@ -178,15 +186,15 @@ nav .container .logo-name {
     width:8.75rem;
     outline:none;
     border:none;
-    color:black;
-    border: 1px solid black;
+    color:var(--black-color);
+    border: 1px solid var(--black-color);
     background-color:transparent;
     border-radius: 5px;
   
    }
    .introduction .btn22:hover {
-    background-color:black;
-    color:white;
+    background-color:var(--black-color);
+    color:var(--white-color);
     border:none;
     transition: 0.5s;
    } 
@@ -217,7 +225,7 @@ nav .container .logo-name {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: none;
     overflow: hidden;
-    color:grey;
+    color:var(--dark-color);
   }
 
   .services  .card:hover {
@@ -228,8 +236,8 @@ nav .container .logo-name {
   .services .circle{
     height:4.4rem ;
     width:4.4rem;
-    background-color: rgb(227, 187, 187);
-    color:black;
+    background-color: var(--pink-light-color);
+    color:var(--black-color);
     font-size: 1.8rem;
     padding: 0.75rem;
     border-radius: 50%;
@@ -237,15 +245,15 @@ nav .container .logo-name {
     margin-bottom: 1.25rem;
   } 
   .services .card:hover .circle{
-    background-color: black;
-    color: white;
+    background-color: var(--black-color);
+    color:var(--white-color);
     transition: 0.5s;
   }
 
 
 /*********portfolio*************/
 #portfolio{
-    background-color:rgb(249, 239, 239);
+    background-color:var(--beige-color);
    }
  
 .portfolio .item:before{
@@ -271,7 +279,7 @@ nav .container .logo-name {
  /****** button see more  *******/
  .portfolio .btn-pro {
   background-color:var(--primary-color);
-  color: white;
+  color: var(--white-color);
   outline: none;
   border:none;
   height:3rem;
@@ -279,9 +287,9 @@ nav .container .logo-name {
   border-radius: 5px;
 }
 .portfolio .btn-pro:hover{
-  background: white;
+  background:var(--white-color);
   color:var(--primary-color);
-   border:1px solid #d44bb4;
+   border:1px solid var(--pink-dark-color);
    font-weight: 500;
    transition:0.4s;
 
@@ -293,7 +301,7 @@ nav .container .logo-name {
  /****** button 3 *******/
  .contact .btn3{
   background-color:var(--yellow-dark-color);
-  color: white;
+  color: var(--white-color);
   outline: none;
   border:none;
   height:3rem;
@@ -301,9 +309,9 @@ nav .container .logo-name {
   border-radius: 5px;
 }
 .btn3:hover{
-  background: white;
+  background: var(--white-color);
   color:var(--primary-color);
-   border:1px solid #d44bb4;
+   border:1px solid var(--pink-dark-color);
    font-weight: 500;
    transition:0.4s;
 
@@ -314,8 +322,8 @@ nav .container .logo-name {
 .contact .circle{
   height:4.4rem ;
   width:4.4rem;
-  background-color: rgb(227, 187, 187);
-  color:black;
+  background-color:var(--pink-light-color);
+  color:var(--black-color);
   font-size: 1.8rem;
   padding: 0.75rem;
   border-radius: 50%;
@@ -323,28 +331,27 @@ nav .container .logo-name {
   margin-bottom: 1.25rem;
 } 
 .contact .circle:hover{
-  background-color: black;
-  color: white;
+  background-color:var(--black-color);
+  color: var(--white-color);
   transition: 0.4s;
 }
-
 
      /******* Le footer *******/
 
  footer {
-    background-color:rgb(227, 187, 187);
+    background-color:var(--pink-light-color);
     color:var(--dark-color);
     font-weight: bold;
 }
 footer .pied-name {
   font-weight: 900;
-  color:darkmagenta;
+  color:var(--darkmagenta-color);
 }
 
 footer .icons-footer a {
 padding: 0 1rem;
-background-color: rgb(227, 187, 187);
-color:black;
+background-color:var(--pink-light-color);
+color:var(--black-color);
 font-size: 1.8rem;
 border-radius: 50%;
 display: inline-block;
@@ -352,7 +359,7 @@ margin-bottom: 1rem;
 }
 footer .icons-footer a:hover{
   background-color:transparent;
-  color:darkmagenta;
+  color:var(--darkmagenta-color);
   transition: 0.4s;
   
 }
