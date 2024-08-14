@@ -53,6 +53,7 @@ nav .container .logo-name {
  .home-img img{
    max-width:100%;
    border-radius: 50%;
+   border: 1px solid var(--primary-color);
  
   
   }
@@ -139,7 +140,7 @@ nav .container .logo-name {
       overflow: hidden;
       border-radius: 10px;
       cursor: pointer;
-      width:8rem;
+      width:6rem;
       height:30rem;
      
   }
@@ -215,7 +216,7 @@ nav .container .logo-name {
 
  .services .card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: none;
+    border:1px solid var(--primary-color);
     overflow: hidden;
     color:var(--dark-color);
   }
@@ -228,7 +229,7 @@ nav .container .logo-name {
   .services .circle{
     height:4.4rem ;
     width:4.4rem;
-    background-color: var(--pink-light-color);
+    background-color: var(--primary-color);
     color:var(--black-color);
     font-size: 1.8rem;
     padding: 0.75rem;
@@ -245,21 +246,21 @@ nav .container .logo-name {
 
 /*********portfolio*************/
 
- 
-.portfolio .item:before{
+.portfolio .card{
+  border: 1px solid var(--primary-color);
+} 
+.portfolio .card:before{
  
   height: 100%;
   max-width: 100%;
-  background-color: rbga(238,235,230,0.644);
+  background-color:var(--white-color);
   opacity:0;
   position:absolute;
-
-  
 }
 
  .portfolio img {
   transition: transform 0.3s ease;
-}
+ }
 
 .card:hover img {
   transform: scale(1.1);
