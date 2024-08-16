@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById('myButton11').addEventListener('click', function() {
  
   const link = document.createElement('a');
-  link.href = 'D:/wardaCV.pdf';
+  link.href = 'doc/wardaCV.pdf';
   link.download ='wardabk_CV';
   link.click();
   
