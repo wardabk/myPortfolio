@@ -1,6 +1,6 @@
 # Warda BOUBAKER - Portfolio Website
 
-Welcome to my official portfolio website. It showcases my skills, projects, and services .
+Welcome to my official portfolio website. It showcases my skills, my projects, and my services .
 
 This portfolio features a responsive, modern design with sections that include an introduction, skills, services, portfolio, and contact information.
 
