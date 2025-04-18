@@ -29,22 +29,16 @@ I’m **Warda Boubaker**, a developer passionate about web technologies. My miss
 
 ---
 
-## ⚙️ Installation
-
-Clone the project to your local machine:
-
-```bash
-git clone https://github.com/wardabk/myPortfolio.git
- 
 ## 🙋‍♀️ Contact  
 
 Want to collaborate, ask a question, or just chat about tech?  
-📧 **wardaboubaker.outlook.com**
+📧 **wardaboubaker.outlook.com**  
 🔗 [LinkedIn](https://www.linkedin.com/in/warda-boubaker)
 
 ---
 
 ## 🔗 Live Demo  
+
 👉 [Access the live site](https://wardabk.github.io/myPortfolio)
 
 ---
