@@ -25,4 +25,4 @@ This portfolio features a responsive, modern design with sections that include a
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/portfolio-warda-bk.git
+   git clone https://github.com/wardabk/myPortfolio.git
